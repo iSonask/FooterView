@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FooterController" customModule="FooterView" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFirst" destination="WKD-Mr-NcR" id="FvO-ZW-7k6"/>
+                <outlet property="btnFourth" destination="KgV-bk-pZA" id="oXF-LX-NYJ"/>
+                <outlet property="btnSecond" destination="6I1-WM-SL7" id="19H-i9-qeA"/>
+                <outlet property="btnThird" destination="nch-Os-LWn" id="nBh-0u-5Re"/>
+                <outlet property="myView" destination="i5M-Pr-FkT" id="yng-XP-EO8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKD-Mr-NcR">
+                    <rect key="frame" x="0.0" y="0.0" width="75" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="First">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnFirstClicked:" destination="-1" eventType="touchUpInside" id="hhv-gu-WcH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I1-WM-SL7">
+                    <rect key="frame" x="75" y="0.0" width="75" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Second">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSecondClicked:" destination="-1" eventType="touchUpInside" id="ZuW-ad-NYK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nch-Os-LWn">
+                    <rect key="frame" x="150" y="0.0" width="75" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Third">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnThirdClicked:" destination="-1" eventType="touchUpInside" id="uXk-EP-uQ5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-bk-pZA">
+                    <rect key="frame" x="225" y="0.0" width="75" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Fourth">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnFourthClicked:" destination="-1" eventType="touchUpInside" id="L0Z-Rd-8t1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nch-Os-LWn" firstAttribute="top" secondItem="WKD-Mr-NcR" secondAttribute="top" id="2Oj-jt-3VO"/>
+                <constraint firstItem="KgV-bk-pZA" firstAttribute="bottom" secondItem="WKD-Mr-NcR" secondAttribute="bottom" id="4Tb-cS-Io5"/>
+                <constraint firstItem="KgV-bk-pZA" firstAttribute="leading" secondItem="nch-Os-LWn" secondAttribute="trailing" id="D4S-Dp-MNa"/>
+                <constraint firstItem="6I1-WM-SL7" firstAttribute="bottom" secondItem="WKD-Mr-NcR" secondAttribute="bottom" id="DGQ-5Y-8QV"/>
+                <constraint firstItem="6I1-WM-SL7" firstAttribute="top" secondItem="WKD-Mr-NcR" secondAttribute="top" id="F36-aE-7pY"/>
+                <constraint firstItem="6I1-WM-SL7" firstAttribute="leading" secondItem="WKD-Mr-NcR" secondAttribute="trailing" id="Lcz-th-SH0"/>
+                <constraint firstItem="6I1-WM-SL7" firstAttribute="width" secondItem="WKD-Mr-NcR" secondAttribute="width" id="Mfe-IX-vr8"/>
+                <constraint firstItem="WKD-Mr-NcR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O3X-7f-Waq"/>
+                <constraint firstItem="nch-Os-LWn" firstAttribute="leading" secondItem="6I1-WM-SL7" secondAttribute="trailing" id="Uu6-C0-1iL"/>
+                <constraint firstItem="KgV-bk-pZA" firstAttribute="top" secondItem="WKD-Mr-NcR" secondAttribute="top" id="cPG-Z1-UwH"/>
+                <constraint firstAttribute="trailing" secondItem="KgV-bk-pZA" secondAttribute="trailing" id="fED-bV-IAh"/>
+                <constraint firstItem="KgV-bk-pZA" firstAttribute="width" secondItem="WKD-Mr-NcR" secondAttribute="width" id="fRp-ck-Tde"/>
+                <constraint firstItem="WKD-Mr-NcR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m6t-Wl-tum"/>
+                <constraint firstItem="nch-Os-LWn" firstAttribute="width" secondItem="WKD-Mr-NcR" secondAttribute="width" id="mFL-oa-u0g"/>
+                <constraint firstAttribute="bottom" secondItem="WKD-Mr-NcR" secondAttribute="bottom" id="nz4-BN-Pzv"/>
+                <constraint firstItem="nch-Os-LWn" firstAttribute="bottom" secondItem="WKD-Mr-NcR" secondAttribute="bottom" id="sgb-CT-ZS5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="87" y="62"/>
+        </view>
+    </objects>
+</document>
